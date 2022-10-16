@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "outDir": "../../dist/client/",
+        "target": "es5",
+        "module": "commonjs",
+        "rootDir": ".",
+        "declaration": true,
+        "sourceMap": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": true,
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "esModuleInterop": true,
+        "composite": true,
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "es5",
+            "es6",
+            "scripthost",
+            "es2015.collection"
+        ]
+    }
+}
