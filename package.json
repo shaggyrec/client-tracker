@@ -2,7 +2,6 @@
   "name": "client-tracker",
   "version": "1.0.0",
   "description": "Client tracker",
-  "main": "src/server/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc -b -v",
     "browserify:client": "browserify dist/client/index.js > dist/client/client.js",
