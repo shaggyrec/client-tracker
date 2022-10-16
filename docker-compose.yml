@@ -24,8 +24,6 @@ services:
     restart: unless-stopped
     ports:
       - "27017"
-    volumes:
-      - "./db/:/docker-entrypoint-initdb.d/"
 
 volumes:
   db:
