@@ -1,3 +1,3 @@
-import Tracker from './Tracker';
+import Tracker from "./Tracker";
 
-window['tracker'] = new Tracker();
+window["tracker"] = new Tracker();

@@ -9,7 +9,8 @@
     "clean": "rm -rf dist",
     "start": "node dist/server/index.js",
     "watch": "tsc-watch -b -v --onSuccess 'npm run dev'",
-    "dev": "npm run browserify:client && node --inspect=0.0.0.0:5858 dist/server/index.js"
+    "dev": "npm run browserify:client && node --inspect=0.0.0.0:5858 dist/server/index.js",
+    "test": "prettier --check -w \"src/**/*.ts\""
   },
   "author": "Alexander Shogenov <i@shagg.ru>",
   "license": "UNLICENSED",
@@ -28,6 +29,7 @@
     "@types/koa": "^2.13.5",
     "@types/node": "^18.11.0",
     "browserify": "^17.0.0",
+    "prettier": "^2.7.1",
     "tsc-watch": "^5.0.3",
     "typescript": "^4.8.4"
   }
