@@ -9,14 +9,10 @@ class EventsStorage {
     this.db = db;
   }
 
-  public storeAll(events: TrackEvent[]): void {
-    events.forEach((e) => this.store(e));
-  }
-
-  public async store(event: TrackEvent): Promise<void> {
+  public store(events: TrackEvent[]): void {
     this.db
       .collection(this.collectionName)
-      .insertOne(event)
+      .insertMany(events)
       .catch((e) => console.log(e.message));
   }
 }

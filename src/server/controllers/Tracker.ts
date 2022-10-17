@@ -10,7 +10,7 @@ class Tracker {
   }
 
   public async track(ctx: Context): Promise<void> {
-    this.storage.storeAll(
+    this.storage.store(
       ctx.request.body.map(
         ({ name, tags, url, title, ts }) =>
           new TrackEvent(name, tags, url, title, ts)
