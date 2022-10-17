@@ -28,7 +28,7 @@ You can also change `MONGO_DB_NAME`, `TRACKER_PORT`, `WEBSITE_PORT` variables.
     npm start
 ```
 
-From development watch mode
+Development watch mode
 
 ```
     npm watch
